@@ -16,3 +16,6 @@ class Sale:
 
     #retailer : Retailer = None
     product : Product = None
+
+    def __hash__(self):
+        return hash(self.Retailer_code,self.Product_number,self.Order_method_code)
